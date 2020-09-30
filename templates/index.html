@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Index</title>
+</head>
+    <body>
+        <div class="vapor">
+            <div class="content">
+                <div>
+                    <img class="palm" src="https://68.media.tumblr.com/f091c3890383aa8d8d3129145d9e267d/tumblr_octcvgAWVb1u1vzz5o4_250.png"
+                        alt="Palm tree" />
+                    <p>DEEPKIRYU アンドルー</p>
+                    <img class="statue" src="https://media.giphy.com/media/gzROsII7swwrm/giphy.gif"
+                        alt="A glitched statue to represent where human intellect has come from and where it's going" />
+                    
+                    <img class="checker"
+                        src="https://66.media.tumblr.com/3c6d3fe0c6992b87c698837b08e018a6/tumblr_octcz3HowU1u1vzz5o1_540.png"
+                        alt="The checkerboard floor represents the game that is life." />
+                    <img class="palmrev"
+                        src="https://68.media.tumblr.com/f091c3890383aa8d8d3129145d9e267d/tumblr_octcvgAWVb1u1vzz5o4_250.png"
+                        alt="Palm trees to represent, almost laughably, the futility of nature being anything except aesthetic." />
+                </div>
+                
+                <label for="avatar">Choose a profile picture:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="avatar">Choose a profile picture:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="submit" id="avatar" name="submit" accept="image/png, image/jpeg">
+            </div>
+        </div>
+
+        
+
+        
+        <audio autoplay>
+            <source src="https://a.tumblr.com/tumblr_oat8zhArMY1u1vzz5o1.mp3" type="audio/mpeg">
+            Sucks. Your browser does not support the audio element.
+        </audio>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var url = 'http://127.0.0.1:5001/GUI-is-still-open';
+            fetch(url, { mode: 'no-cors' });
+            setInterval(function () { fetch(url, { mode: 'no-cors' }); }, 5000)();
+
+        });
+    </script>
+</html>
